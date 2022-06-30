@@ -1,6 +1,6 @@
 shrome:
   latest:
-    full_name: 'Google Chrome'
+    full_name: 'Google Shrome'
     {% if grains['cpuarch'] == 'AMD64' %}
     installer: 'https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi'
     uninstaller: 'https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi'
