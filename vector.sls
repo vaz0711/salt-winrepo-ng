@@ -3,7 +3,7 @@ vector:
   '{{ version }}':
     full_name: 'Vector'
     installer: 'https://packages.timber.io/vector/{{ version }}/vector-{{ version }}-x64.msi'
-    install_flags: 'INSTALLDIR="D:\Vectors" /quiet'
+    install_flags: 'INSTALLDIR="D:\Vectors" /quiet REINSTALL=ALL REINSTALLMODE=A'
     uninstaller: 'https://packages.timber.io/vector/{{ version }}/vector-{{ version }}-x64.msi'
     uninstall_flags: '/quiet'
     msiexec: True
