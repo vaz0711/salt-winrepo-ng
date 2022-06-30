@@ -1,10 +1,10 @@
 vector:
-  latest:
+{% for version in ['0.22.3', '0.22.2', '0.22.1', '0.22.0', '0.21.2', '0.21.1', '0.21.0'] %}
+  '{{ version }}':
     full_name: 'Vector'
-    installer: 'https://packages.timber.io/vector/0.22.2/vector-0.22.2-x64.msi'
-    uninstaller: 'https://packages.timber.io/vector/0.22.2/vector-0.22.2-x64.msi'
+    installer: 'https://packages.timber.io/vector/{{ version }}/vector-{{ version }}-x64.msi'
     install_flags: 'INSTALLDIR="D:\Vectors" /quiet'
-    uninstall_flags: '/qn /norestart'
     msiexec: True
     locale: en_US
     reboot: False
+{% endfor %}
